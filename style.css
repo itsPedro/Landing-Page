@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    scrollbar-width: thin;
+    -webkit-scrollbar-width: 10px;
+    scrollbar-color: #f1f1f1 #f1f1f1;
+    scrollbar-color: #888 #f1f1f1;
+    -webkit-scrollbar-thumb-color: #888;
+    -webkit-scrollbar-thumb-border-radius: 5px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, black, transparent);
+    position: fixed;
+    z-index: 1;
+    height: 75px;
+    width: 100%;
+    transition: 1s ease-out;
+    color: aliceblue;
+}
+
+.navbar a img {
+    height: 50px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.navbar ul li a {
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.7s ease-in-out;
+    color: aliceblue;
+}
+
+.nav-link:hover {
+    background-color: #6eaaa19b;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 30px;
+    gap: 20px;
+    height: 800px;
+    background-image: url('./assets/header.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #112222;
+}
+
+.header button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: 0.7s ease-in-out;
+}
+
+.header button:hover {
+    background-color: #6eaaa19b;
+}
+
+
+.servicos {
+    background-image: linear-gradient(to bottom, #6EAAA1, #112222);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-serv-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serv-img {
+    opacity: 0;
+    transition: opacity .2s;
+    border-radius: 10px;
+    box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.8);
+}
+
+.on {
+    opacity: 1;
+    position: absolute;
+}
+
+#prev-btn, #next-btn {
+    color: aliceblue;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.sobre {
+    background-color: #112222;
+    height: 600px;
+}
