@@ -54,6 +54,13 @@ const prevImg = () => {
 btnNext.addEventListener('click', nextImg);
 btnPrev.addEventListener('click', prevImg);
 
+const menuIcon = document.querySelector('.menu-icon');
+const nav = document.querySelector('nav');
+
+menuIcon.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+
 class objetivos {
     constructor(titulo, corpo) {
         this.titulo = titulo;
