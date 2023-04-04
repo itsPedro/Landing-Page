@@ -15,7 +15,6 @@
     z-index: 1;
     height: 75px;
     width: 100vw;
-    transition: 1s ease-out;
     color: aliceblue;
 }
 
@@ -31,13 +30,18 @@
 .navbar ul li a {
     padding: 10px;
     border-radius: 10px;
-    transition: 0.7s ease-in-out;
+    transition: 0.3s ease;
     color: aliceblue;
 }
 
 .nav-link:hover {
     background-color: #6eaaa19b;
 }
+
+.menu-icon {
+    display: none;
+}
+
 
 .header {
     display: flex;
@@ -60,7 +64,7 @@
     padding: 10px;
     background-color: transparent;
     border-radius: 5px;
-    transition: 0.7s ease-in-out;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
@@ -86,7 +90,6 @@
 .serv-img {
     position: absolute;
     opacity: 0;
-    transition: opacity .2s;
     border-radius: 10px;
 }
 
@@ -141,20 +144,20 @@
 }
 
 @media screen and (max-width: 768px) {
-    .navbar {
-        justify-content: space-between;
-        
-    }
 
     .navbar ul {
-      display: none;
-      position: absolute;
-      width: 100%;
-      top: 75px;
-      left: 0;
-      background-color: transparent;
-      text-align: center;
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(45, 47, 47);
+        text-align: center;
     }
+    .navbar {
+        justify-content: space-between;
+    }
+
 
     nav ul li {
         display: block;
@@ -163,14 +166,14 @@
 
     .navbar ul li a {
       display:  inline-block;
+      font-size: 20px;
+      padding: 10px;
+      color: aliceblue;
     }
 
     .navbar.active ul {
-      display: block;
-    }
-
-    .nav-logo {
-        margin-left: 20px;
+      display: flex;
+      flex-direction: column;
     }
 
     .menu-icon {
@@ -178,6 +181,7 @@
       cursor: pointer;
       margin-right: 20px;
     }
+    
     .menu-icon i {
       color: aliceblue;
     }
@@ -188,12 +192,5 @@
     }
     .objetivo {
         width: 350px;
-    }
-}
-
-
-@media screen and (min-width: 768px)  {
-    .menu-icon {
-      display: none;
     }
 }
