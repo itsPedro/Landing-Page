@@ -72,6 +72,10 @@ class objetivos {
     }
 }
 
-let allOBJ = [ new objetivos('Teste','Testando')];
+let allOBJ = [ 
+    new objetivos('Objetivo 1','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum suscipit risus, eu cursus orci.'),
+    new objetivos('Objetivo 2','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum suscipit risus, eu cursus orci.'),
+    new objetivos('Objetivo 3','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum suscipit risus, eu cursus orci.'),
+];
 
 document.querySelector('.objetivos').innerHTML = allOBJ.reduce((acc, obj) => { return acc += obj.drawnOBJ() }, '');
