@@ -2,5 +2,5 @@
 
 Landing Page destinada a disciplina de Projeto Orientado
 
-*Link*
+**Link**
 https://itspedro.github.io/Landing-Page/
