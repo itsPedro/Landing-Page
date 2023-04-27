@@ -179,7 +179,7 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     .navbar ul {
         display: none;
@@ -224,7 +224,7 @@
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
 
     .navbar ul {
         display: none;
