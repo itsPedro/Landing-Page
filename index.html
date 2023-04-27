@@ -26,20 +26,34 @@
             <li><a class="nav-link" href="#contato">Contato</a></li>
         </ul>
     </nav>
-    <div class="header">
+    <div class="header" href="#">
         <h1>Bem Vindo</h1>
         <button class="btn"><i class="fa fa-add"></i></button>
     </div>
-    <div class="servicos">
+    <div class="servicos" href="#servicos">
         <button id="prev-btn" class="btn"><i class="fa fa-arrow-left fa-lg"></i></button>
         <div class="serv-imgs"></div>
         <button id="next-btn" class="btn"><i class="fa fa-arrow-right fa-lg"></i></button>
     </div>
-    <div class="sobre">
+    <div class="sobre" href="#sobre">
         <h3 class="title">Sobre</h3>
         <div class="objetivos"></div>
     </div>
+    <div class="contato" href="#contato">
+        <h3 class="title">Contato</h3>
+        <form class="formulario">
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" placeholder="exemplo@email.com..."/>
+            </div>
+            <div>
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" placeholder="(99) 91234-5678"/>
+            </div>
+        </form>
 
-    <script src="script.js" defer></script>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
